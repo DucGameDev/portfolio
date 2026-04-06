@@ -57,7 +57,7 @@ export const Hero = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <a href="/Nguyen-Minh-Duc-CV.pdf" download>
+                            <a href={`${import.meta.env.BASE_URL}Nguyen-Minh-Duc-CV.pdf`} download>
                                 <AnimatedBorderButton>
                                     <Download className="w-5 h-5" />
                                     Download CV
@@ -77,7 +77,7 @@ export const Hero = () => {
                             />
                             <div className="relative glass rounded-3xl p-2 glow-border">
                                 <img
-                                    src="/profile-photo.jpg"
+                                    src={`${import.meta.env.BASE_URL}profile-photo.jpg`}
                                     alt="Pedro Machado"
                                     className="w-full aspect-[4/5] object-cover rounded-2xl"
                                 />
